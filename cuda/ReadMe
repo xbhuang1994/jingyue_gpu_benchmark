@@ -1,0 +1,50 @@
+# Advanced GPU Benchmark Suite - 中文版
+
+这是一款功能全面的GPU性能基准测试套件,可以评估GPU在各种工作负载下的性能表现,包括张量运算、内存带宽、渲染、延迟、功耗和零知识(ZK)算法性能。
+
+## 主要功能
+
+- **张量运算基准测试**: 测量GPU在tensor运算(如向量加法)方面的吞吐量(单位为GFLOPS)。
+- **内存带宽基准测试**: 测量GPU在大数据集传输方面的内存带宽速度(单位为GB/s)。
+- **渲染基准测试**: 模拟一个简单的3D渲染场景,测量GPU的渲染帧率(单位为FPS)。
+- **延迟基准测试**: 测量GPU执行单个内核操作的平均延迟时间(单位为微秒)。
+- **功耗基准测试**: 测量GPU在持续负载下的平均功耗(单位为瓦特)。
+- **ZK证明基准测试**: 测量GPU在生成零知识密码学证明方面的性能(单位为毫秒)。
+
+## 安装
+
+1. 使用提供的 `gpu-benchmark-environment.yml` 文件创建一个新的Conda环境:
+
+   ```
+   conda env create -f gpu-benchmark-environment.yml
+   ```
+
+2. 激活环境:
+
+   ```
+   conda activate gpu-benchmark
+   ```
+
+3. 或者,您也可以直接使用 `gpu-benchmark-requirements.txt` 文件安装Python依赖项:
+
+   ```
+   pip install -r gpu-benchmark-requirements.txt
+   ```
+
+## 使用
+
+要运行完整的基准测试套件,执行 `advanced-gpu-benchmark.py` 脚本:
+
+```
+python advanced-gpu-benchmark.py
+```
+
+这将输出每个单独基准测试的结果,包括测量的性能指标。
+
+## 贡献
+
+如果您有任何建议或发现任何问题,欢迎在GitHub上提交新的issue或pull request。
+
+## 许可证
+
+本项目采用 [MIT 许可证](LICENSE)。

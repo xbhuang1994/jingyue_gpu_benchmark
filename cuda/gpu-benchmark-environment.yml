@@ -1,0 +1,4 @@
+numpy==1.23.5
+pycuda==2022.1.1 
+pynvml==11.5.0
+pysnark==0.1.2
